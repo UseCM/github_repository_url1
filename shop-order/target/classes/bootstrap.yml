@@ -1,0 +1,32 @@
+server:
+  port: 8092
+  tomcat:
+    max-threads: 2
+spring:
+  application:
+    name: service-order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 9999   #表示当前的程序跟控制台交流，随意指定一个压根不可能使用的端口
+        dashboard: localhost:8080  # 表示控制台服务的地址
+service-product: # 调用的提供者的名称）
+  ribbon: #设置为随机
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+feign:
+  sentinel:
+    enabled: true

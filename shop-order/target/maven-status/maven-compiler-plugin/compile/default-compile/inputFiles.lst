@@ -1,0 +1,16 @@
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\ApplicationOrder.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\controller\OrderController2.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\controller\OrderController.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\config\RequestOriginParserDefinition.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\fallback\FallbackProduct.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\config\ExceptionHandlerPage.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\OrderService3Fallback.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\impl\UserService.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\dao\OrderDao.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\controller\OrderController3.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\impl\IOrderService.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\OrderService3BlockHandler.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\OrderService.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\OrderService3.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\service\impl\ProductService.java
+D:\Study\专项\微服务\mvp\ali\shop-order\src\main\java\com\rd\config\FilePersistence.java

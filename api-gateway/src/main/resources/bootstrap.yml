@@ -1,0 +1,22 @@
+server:
+  port: 7000  #网关服务端口号
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:  #路由数组[就是指定当前请求满足什么条件的时候转发到什么微服务]
+        - id: product_route #当前路由的标识，要求唯一
+          uri: http://localhost:8081  #请求要转发到的地址
+          order: 1  #当前路由的优先级，数字越小级别越高
+          predicates: #断言(路由转发需要满足的条件）
+            - Path=/product-serv/**    #当请求路径满足满足Path指定的规则时候，才进行路由转发
+            - Age=18,60
+          filters:  #过滤器，在请求传递的过程中，通过过滤器进行一定的修改
+            - StripPrefix=1   #表示过滤掉一层
+      discovery:
+        locator:
+          enabled: true
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
